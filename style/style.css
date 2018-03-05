@@ -339,7 +339,8 @@ section.portfolio {
 }
 
 section.skills > h2,
-section.portfolio > h2 {
+section.portfolio > h2,
+section.message > h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -407,62 +408,6 @@ section.portfolio {
     max-width: 800px;
 }
 
-/*section.portfolio > nav{*/
-/*text-align: center;*/
-/*display: inline-block;*/
-/*vertical-align: top;*/
-
-/*}*/
-/*section.portfolio > nav > ol{*/
-/*!*border:1px solid black;*!*/
-/*display: inline-block;*/
-/*vertical-align: top;*/
-/*cursor: pointer;*/
-/*}*/
-/*section.portfolio > nav > ol >li{*/
-/*font-size: 13px;*/
-/*float: left;*/
-/*margin-left: 44px;*/
-/*}*/
-
-/*section.portfolio > nav > ol >li:first-child{*/
-/*margin-left: 0;*/
-/*}*/
-
-/*section.portfolio > nav > .bar{*/
-/*height: 5px;*/
-/*background:#ffffff;*/
-/*border-radius: 2px;*/
-/*margin-top: 10px;*/
-/*margin-bottom: 30px;*/
-/*}*/
-
-/*section.portfolio > nav > .bar > .bar-inner{*/
-/*transition: All 0.1s;*/
-/*}*/
-/*section.portfolio > nav > .bar > .bar-inner.state-1{*/
-/*background: #e8676b;*/
-/*width:15%;*/
-/*height: 100%;*/
-/*border-radius: 2px;*/
-/*}*/
-
-/*section.portfolio > nav > .bar > .bar-inner.state-2{*/
-/*margin-left:30%;*/
-/*background: #e8676b;*/
-/*width:16%;*/
-/*height: 100%;*/
-/*border-radius: 2px;*/
-/*}*/
-
-/*section.portfolio > nav > .bar > .bar-inner.state-3{*/
-/*margin-left:60%;*/
-/*background: #e8676b;*/
-/*width:40%;*/
-/*height: 100%;*/
-/*border-radius: 2px;*/
-/*}*/
-
 section.portfolio h2 {
     margin-bottom: 32px;
 }
@@ -488,22 +433,22 @@ section.portfolio .swiper-button-next {
     left: 100%;
 }
 
-/*section.portfolio .works .big,*/
-/*section.portfolio .works .small{*/
-/*position: absolute;*/
-/*}*/
+section.message #user-comments-form{
+    padding:20px;
 
-/*section.portfolio .works .big{*/
-/*top:0;*/
-/*left:0;*/
-/*}*/
-/*section.portfolio .works .small{*/
-/*top:0;*/
-/*left:637px;*/
-/*}*/
+}
 
-/*section.portfolio .works .small:last-child{*/
-/*top:312px;*/
-/*left:637px;*/
-/*}*/
+section.message #message-list > ul {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+}
+
+section.message #message-list > ul > li {
+    padding: 16px;
+    border-bottom: 1px solid #ececec;
+
+}
 

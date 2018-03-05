@@ -17,10 +17,10 @@
         }
     </style>
 
-    <link rel="stylesheet" href='script/loading.css'>
+    <link rel="stylesheet" href='style/loading.css'>
     <link href="favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="style/swiper.min.css">
-    <link rel="stylesheet" href='script/style.css'>
+    <link rel="stylesheet" href='style/style.css'>
 
 
 </head>
@@ -211,10 +211,16 @@
     </section>
 
     <!--用户评论区-->
-    <section style="width: 500px; margin: 100px auto;">
+    <section class='message' style="width: 500px; margin: 100px auto;">
+
         <h2>留言板</h2>
         <form action="" id="user-comments-form" method="post">
-            <input type="text" name="user-comments" id="comment-data"/>
+            <label>用户名
+                <input type="text" name="user-name" id="comment-user-name"/>
+            </label>
+            <label>评论
+                <input type="text" name="user-comments" id="comment-data"/>
+            </label>
             <input type="submit" value="提交评论"/>
         </form>
         <div id="message-list">
