@@ -17,11 +17,11 @@
         }
     </style>
 
-    <link rel="stylesheet" href='loading.css'>
+    <link rel="stylesheet" href='script/loading.css'>
     <link href="favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
-    <link rel="stylesheet" href='style.css'>
-    <script src="script/swiper.min.js"></script>
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <link rel="stylesheet" href='script/style.css'>
+
 
 </head>
 
@@ -63,7 +63,6 @@
     </div>
 </div>
 <main>
-
 
     <div data-x id="siteAbout" class="userCard offset">
         <div class="pictureAndText clearfix">
@@ -210,15 +209,37 @@
         <!---------swiper轮播图组件代码结束--------->
 
     </section>
+
+    <!--用户评论区-->
+    <section style="width: 500px; margin: 100px auto;">
+        <h2>留言板</h2>
+        <form action="" id="user-comments-form" method="post">
+            <input type="text" name="user-comments" id="comment-data"/>
+            <input type="submit" value="提交评论"/>
+        </form>
+        <div id="message-list">
+            <ul>
+
+            </ul>
+        </div>
+    </section>
+
+
 </main>
 <!--模块化-->
-<script src='script/Tween.min.js'></script>
-<script src="script/script.js"></script>
-<script src="./script/swiper-control.js"></script>
-<script src="./script/smooth-navigation.js"></script>
-<script src="./script/sticky-navbar.js"></script>
-<script src="./script/element-sink-nav-highlighting.js"></script>
+<script src="script/swiper.min.js"></script>
+<script src="script/swiper-control.js"></script>
 
+
+<script src='script/Tween.min.js'></script>
+<script src="script/smooth-navigation.js"></script>
+<script src="script/sticky-navbar.js"></script>
+<script src="script/element-sink-nav-highlighting.js"></script>
+
+<script src="script/av-min.js"></script>
+<script src="script/message.js"></script>
+
+<script src="script/script.js"></script>
 
 </body>
 </html>
