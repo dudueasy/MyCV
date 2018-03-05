@@ -73,7 +73,7 @@
             model.save(this.dataTableName, this.commentData, this.username)
                 .then((response) => {
                         console.log('提交成功');
-                        console.log(response);
+
                         // 更新页面评论数据
                         let li = document.createElement('li')
                         li.innerText = `${response.attributes.user} : ${response.attributes.data}`
@@ -86,7 +86,7 @@
                     })
         },
         bindEvents: function () {
-            console.log(this)
+
             this.form.addEventListener('submit', (e) => {
                 e.preventDefault()
                 this.submitHandler(e)
