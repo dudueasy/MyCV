@@ -7,7 +7,7 @@ setTimeout(() => {
 
 window.onload = function () {
     // 顶部导航栏鼠标事件移入移出的动效
-    let liTags = document.querySelectorAll('nav.menu >ul >li')
+    let liTags = document.querySelector('nav.menu >ul >li')
 
     for (let i = 0; i < liTags.length; i++) {
         liTags[i].onmouseenter = function (e) {

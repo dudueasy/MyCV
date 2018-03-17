@@ -1,7 +1,7 @@
 // 用于控制 leancloud 的脚本
 //// 立即执行!
 !function () {
-    let view = document.querySelector('section.message')
+    let view = View('section.message')
 
     let model = {
         init: function () {

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的个人简历</title>
+
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+
+    <link rel="stylesheet" href='css/loading.css'>
+    <link href="../favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--<link rel="stylesheet" href='css/style.css'>-->
+    <link rel="stylesheet" href='css/test.css'>
+
+
+</head>
+
+<body>
+<div id='siteWelcome' class="site-welcome active">
+    <div class="loading"></div>
+</div>
+<div class="topNavBar">
+    <div class="inner clearfix">
+        <a href="" class="logo" alt='logl'>
+            <span class="rs">RS</span>
+            <span class="card">card</span>
+        </a>
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="#siteAbout">关于</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li>
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu">
+                        <li>作品 1</li>
+                        <li>作品 2</li>
+                        <li>作品 3</li>
+                    </ul>
+
+                </li>
+                <li><a href="#siteAbout">博客</a></li>
+                <li><a href="#siteAbout">日历</a></li>
+                <li><a href="#siteAbout">联系方式</a></li>
+                <li><a href="#siteAbout">其他</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="mask">
+
+    </div>
+</div>
+<main>
+
+    <div data-x id="siteAbout" class="userCard offset">
+        <div class="pictureAndText clearfix">
+            <div class="picture">
+                <img src="img/avatar.jpg" alt="头像" width="299px">
+            </div>
+            <div class="text">
+                    <span class="welcome">HELLO
+                        <span class="triangle"></span>
+                    </span>
+
+                <h1>杜涛</h1>
+                <p>网络开发者</p>
+                <hr>
+                <dl class="clearfix">
+                    <dt>年龄</dt>
+                    <dd>26</dd>
+                    <dt>所在城市</dt>
+                    <dd>北京</dd>
+                    <dt>邮箱</dt>
+                    <dd>dudu@x.com</dd>
+                    <dt>手机</dt>
+                    <dd>13812345678</dd>
+                </dl>
+
+            </div>
+        </div>
+        <footer class="media">
+
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-githubsquare">
+                    </use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter3">
+                    </use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo">
+                    </use>
+                </svg>
+            </a>
+
+        </footer>
+    </div>
+    <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="cv/file/example.pdf" target="_blank" download>下载 PDF 简历</a>
+    </p>
+
+    <p class="selfIntroduction">
+        apolo, 网络开发者。<br> 技能：前端开发，php开发, python 开发，Django 开发
+    </p>
+
+    <section data-x id="siteSkills" class="skills offset">
+        <h2>技能</h2>
+        <ol>
+            <div class="liWrapper clearfix">
+                <li>
+                    <h3>HTML 5 &amp; CSS 3</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </li>
+            </div>
+            <div class="liWrapper clearfix">
+                <li>
+                    <h3>JQuery</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>React.js</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </li>
+            </div>
+            <div class="liWrapper clearfix">
+                <li>
+                    <h3>Node.js</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:10%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP &amp; MySQL</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </li>
+            </div>
+            <div class="liWrapper clearfix">
+                <li>
+                    <h3>Python</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:75%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Django</h3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:75%"></div>
+                    </div>
+                </li>
+            </div>
+        </ol>
+    </section>
+
+    <section data-x id="siteWorks" class="portfolio offset">
+        <h2>作品集</h2>
+
+
+        <!---------swiper 轮播图组件HTML代码开始--------->
+        <div id="slides">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img class="swiper-slide" src="img/works/keyboard_nav.png"/>
+                    <img class="swiper-slide" src="img/works/online_edu.png"/>
+                    <img class="swiper-slide" src="img/works/calm.png"/>
+                    <img class="swiper-slide" src="img/works/canvas_drawboard.jpg"/>
+                    <img class="swiper-slide" src="img/works/react_news.png"/>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!---------swiper轮播图组件代码结束--------->
+
+    </section>
+
+    <!--用户评论区-->
+    <section class='message' style="width: 500px; margin: 100px auto;">
+
+        <h2>留言板</h2>
+        <form action="" id="user-comments-form" method="post">
+            <label>用户名
+                <input type="text" name="user-name" id="comment-user-name"/>
+            </label>
+            <label>评论
+                <input type="text" name="user-comments" id="comment-data"/>
+            </label>
+            <input type="submit" value="提交评论"/>
+        </form>
+        <div id="message-list">
+            <ul>
+
+            </ul>
+        </div>
+    </section>
+
+
+</main>
+<!--模块化-->
+<script src="../dist/swiper.min.js"></script>
+<script src="../dist/swiper-control.js"></script>
+<script src="../dist/View.js"></script>,
+<script src="../dist/Tween.min.js"></script>
+<script src="../dist/smooth-navigation.js"></script>
+<script src="../dist/sticky-top-navbar.js"></script>
+<script src="../dist/element-sink-nav-highlighting.js"></script>
+
+<script src="../dist/av-min.js"></script>
+<script src="../dist/comments-block.js"></script>
+
+<script src="../dist/script.js"></script>
+
+</body>
+</html>

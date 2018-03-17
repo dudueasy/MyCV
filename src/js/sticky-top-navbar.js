@@ -2,7 +2,7 @@
 //// 立即执行!
 
 !function () {
-    let view = document.querySelector('.topNavBar')
+    let view = View('.topNavBar')
 
     let controller = {
         view: null,
