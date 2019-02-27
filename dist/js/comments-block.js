@@ -14,8 +14,10 @@
             });
         },
         fetch: function fetch(dataTableName) {
-            var query = new AV.Query(dataTableName);
-            return query.find();
+            var query = new AV.Query(dataTableName).descending("createdAt").limit(10);
+            var results = query.find();
+            console.log('result: ', results);
+            return results;
         },
         save: function save(dataTableName, commentData, username) {
             var queryObj = AV.Object.extend(dataTableName);
@@ -76,7 +78,8 @@
                 // 更新页面评论数据
                 var li = document.createElement('li');
                 li.innerText = response.attributes.user + ' : ' + response.attributes.data;
-                _this.messageContainer.appendChild(li);
+                _this.messageContainer.prepend(li);
+                _this.messageContainer.lastChild.remove();
                 _this.form.querySelector('#comment-data').value = '';
             }, function () {
                 console.log('提交失败');

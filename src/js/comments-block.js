@@ -14,8 +14,10 @@
             });
         },
         fetch: (dataTableName) => {
-            let query = new AV.Query(dataTableName);
-            return query.find()
+          let query = new AV.Query(dataTableName).descending("createdAt").limit(10);  
+          let results = query.find()
+          console.log('result: ', results)
+          return  results
         },
         save: (dataTableName, commentData, username) => {
             let queryObj = AV.Object.extend(dataTableName)
@@ -77,7 +79,8 @@
                         // 更新页面评论数据
                         let li = document.createElement('li')
                         li.innerText = `${response.attributes.user} : ${response.attributes.data}`
-                        this.messageContainer.appendChild(li)
+                        this.messageContainer.prepend(li)
+                        this.messageContainer.lastChild.remove()
                         this.form.querySelector('#comment-data').value = ''
                     }
                     ,

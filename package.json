@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel script -d dist",
-    "watch": "babel -w script/  -d  dist/"
+    "watch": "babel -w src/  -d  dist/"
   },
   "keywords": [
     "cv"
@@ -30,7 +30,14 @@
   "homepage": "https://github.com/dudueasy/MyCV#readme",
   "description": "",
   "babel": {
-    "presets": [ ["es2015",{"modules": false} ] ],
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ],
     "plugins": []
   }
 }
